@@ -1,14 +1,12 @@
 const express = require('express');
 const axios = require('axios');
-const config = require('../../config').upsplash
+const config = require('universal-config');
 const router = express.Router();
 
-const API_root = "https://api.unsplash.com";
-const count = 18;
-
-
 router.get('/feed', function(req, res, next) {
-  axios.get(`${API_root}/photos/random?client_id=${config.accessKey}&count=${count}`)
+  let client_id = config.get("UNSPLASH:accessKey");
+  let count = config.get("UNSPLASH:fetchCount");
+  axios.get(`https://api.unsplash.com/photos/random?client_id=${client_id}&count=${count}`)
   .then((response) => {
     res.send(response.data);
   })

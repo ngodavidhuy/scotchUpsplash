@@ -23,10 +23,9 @@
     "body-parser": "^1.18.3",
     "cors": "^2.8.5",
     "express": "^4.16.4",
-    "node-fetch": "^2.3.0",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
-    "unsplash-js": "^5.0.0"
+    "universal-config": "^0.3.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
