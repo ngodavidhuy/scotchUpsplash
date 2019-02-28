@@ -1,3 +1,43 @@
-h1 {
-  color: red;
+/* ============== */
+/* === VARIABLES === */
+/* ============== */
+
+:root {
+  --primary-font: 'Amatic SC', cursive;
 }
+
+/* ============== */
+/* === BASE === */
+/* ============== */
+
+h1 {
+  font-family: var(--primary-font);
+  font-size: 80px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.main-content {
+  border: 1px solid green;
+}
+
+.feed-container {
+  display: grid;
+  width: 95%;
+  max-width: 1600px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 10px;
+  border: 1px solid red;
+  margin: auto;
+}
+
+.feed-entry {
+  display: flex;
+  justify-content: center;
+  border: 1px solid purple;
+  align-items: center;
+}
+
+/* ================== */
+/* === COMPONENTS === */
+/* ================== */
