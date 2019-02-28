@@ -13,30 +13,52 @@
 
 body {
   background-color: var(--background-primary);
+  font-family: var(--font-primary);
 }
 
 h1 {
-  font-family: var(--font-primary);
   font-size: 80px;
   text-align: center;
   letter-spacing: 2px;
+  margin: 0;
+}
+
+p {
+  align-self: center;
+  letter-spacing: 2px;
+  margin-bottom: 5%;
 }
 
 /* ================== */
 /* === COMPONENTS === */
 /* ================== */
 
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
 .feed-container {
   display: grid;
   width: 95%;
-  max-width: 1600px;
-  grid-template-columns: repeat(3, minmax(50px, 1fr));
-  grid-row-gap: 10px;
+  max-width: 1200px;
+  
+  grid-template-columns: repeat(3, minmax(150px, 1fr));
+  grid-gap: 10px;
+  grid-auto-rows: minmax(150px, auto);
   margin: auto;
 }
 
 .feed-entry {
   justify-self: center;
+}
+
+img {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* ===================== */

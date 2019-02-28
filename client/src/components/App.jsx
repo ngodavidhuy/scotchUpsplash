@@ -56,7 +56,10 @@ class App extends Component {
     let { feed } = this.state;
     return (
       <div className="main-content">
-        <h1>Infinite Scroll Unsplash Gallery</h1>
+        <div className="banner">
+          <h1>Infinite Scroll Unsplash Gallery</h1>
+          <p><sup>@codebyaftersalt</sup></p>
+        </div>
         <Feed feed={feed} />
       </div>
       
